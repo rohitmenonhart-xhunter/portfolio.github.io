@@ -1,0 +1,120 @@
+body {
+    font-family: 'Cinzel', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #333;
+    animation: fadeInUp 1s ease-out;
+}
+
+.project {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.project:hover {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h3, .project p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.project:hover h3, .project:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #ffffff00;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.emojis-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.emojis-container span {
+    position: absolute;
+}
+body {
+    margin: 0;
+    
+  }
+  
+  .emojis-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .falling-image {
+    width: 30px; /* Set the width of your falling image */
+    height: 30px; /* Set the height of your falling image */
+    position: absolute;
+  }
+  
+  .logo {
+    width: 500px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+.project-title h3 {
+    display: block; /* Ensure project title is always visible */
+}
+
+.project-description {
+    display: none; /* Initially hide project descriptions */
+}
+
+.project:hover .project-description {
+    display: block; /* Show project description when hovering over the project */
+}
+
